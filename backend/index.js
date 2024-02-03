@@ -6,8 +6,6 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
-// project-id: d5dfcd96-7c17-4fa7-8aca-007e92b2989a
-// private-key: 9966765c-0f0a-4e13-ac5f-a13831192e4a
 app.post("/authenticate", async (req, res) => {
   const { username } = req.body;
   try {
